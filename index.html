@@ -21,7 +21,7 @@
   </button>
   <ul id="nav-menu">
     <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#writing">Writing</a></li>
+    <li><a href="#writing">Writings</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -34,7 +34,6 @@
       <img src="pp.jpg" alt="Vedat Senol">
       <figcaption>
         <b>Vedat Senol, Ph.D.</b><br>
-        Modeling &amp; Simulation<br>
         Malmö, SE
       </figcaption>
     </figure>
@@ -42,16 +41,15 @@
       <p class="eyebrow">Multidomain Modeling Expert</p>
       <h1>Vedat Senol, Ph.D.</h1>
       <hr class="stress-rule">
-      <p class="thesis">I model how complex physical systems behave &mdash; and fail &mdash; before they&rsquo;re built.</p>
+      <p class="thesis">I model how complex physical systems behave &mdash; and fail &mdash; whether the hardware exists yet or not.</p>
       <div class="tags">
-        <span>Control</span>
-        <span>Energy</span>
-        <span>Oil &amp; Gas</span>
-        <span>Dynamic Systems</span>
+        <span>Modeling &amp; Simulation</span>
+        <span>Control &amp; Calibration</span>
+        <span>Tools &amp; Production</span>
       </div>
       <div class="hero-ctas">
         <a href="#contact" class="btn-primary">Get in touch</a>
-        <a href="#writing" class="btn-secondary">View writing</a>
+        <a href="#writing" class="btn-secondary">View writings</a>
       </div>
     </div>
   </div>
@@ -69,45 +67,81 @@
       <div class="xcard">
         <span class="tag">CTRL</span>
         <h3>Control Systems</h3>
+        <p>Optimal and predictive control &mdash; LQR, MPC, state estimation &mdash; keeping systems stable and within limits under disturbance.</p>
       </div>
 
       <div class="xcard">
         <span class="tag">ENRG</span>
         <h3>Energy</h3>
+        <p>Wind, battery, and thermal energy systems &mdash; pack-level state estimation, storage performance, and power flow under real duty cycles.</p>
       </div>
 
       <div class="xcard">
         <span class="tag">O&amp;G</span>
         <h3>Oil &amp; Gas</h3>
+        <p>Electrical submersible pump modeling, plus mooring and riser mechanics and structural loads on floating platforms.</p>
       </div>
 
       <div class="xcard">
         <span class="tag">DYN</span>
         <h3>Dynamic Systems</h3>
+        <p>Roll-to-roll web handling, rotating machinery, and multibody mechanics &mdash; predicting vibration, contact stress, and resonance.</p>
       </div>
 
       <div class="xcard">
         <span class="tag">MOD</span>
         <h3>Multidomain Modeling</h3>
+        <p>Coupled structural, thermal, fluid, and electrical physics in one Modelica/FEM model &mdash; exported as FMUs for co-simulation.</p>
       </div>
 
       <div class="xcard">
         <span class="tag">AGENT</span>
         <h3>Agentic Frameworks &amp; Production</h3>
+        <p>LLM agents wrapping simulation tools &mdash; plain-language prompts that run real models, plot results, and ship as deployable apps.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- WRITING -->
+<!-- WRITINGS -->
 <section id="writing" class="section">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Writing</p>
-      <h2>Selected technical articles &amp; posts</h2>
+      <p class="eyebrow">Writings</p>
+      <h2>Selected technical blogs and posts</h2>
     </div>
     <div class="writing-grid">
+
+      <article class="wcard">
+        <div class="thumb"><img src="art/fowt-mooring.gif" alt="OC4 catenary mooring line simulation"></div>
+        <div class="body">
+          <span class="source-badge">FOWT Series &middot; Part 1</span>
+          <h3>One Line. Four Models. Which One, and When?</h3>
+          <p class="summary">Benchmarking analytical catenary, FEM, Guyan MOR, and an MLP surrogate for floating-wind mooring forces on the OC4 DeepCwind semi-submersible &mdash; speed vs. fidelity, and where each breaks.</p>
+          <a class="card-link" href="#" rel="noopener">Read post &#8594;</a>
+        </div>
+      </article>
+
+      <article class="wcard">
+        <div class="thumb"><img src="art/fowt-dynamic.gif" alt="6DOF floating wind turbine platform in motion"></div>
+        <div class="body">
+          <span class="source-badge">FOWT Series &middot; Part 2</span>
+          <h3>It Moves Now &mdash; Dynamic Mooring in 6DOF</h3>
+          <p class="summary">A full 6DOF Modelica MultiBody floating turbine exported as an FMU and driven from Python under combined wind and wave loading, comparing analytical catenary against the ONNX surrogate every step.</p>
+          <a class="card-link" href="#" rel="noopener">Read post &#8594;</a>
+        </div>
+      </article>
+
+      <article class="wcard">
+        <div class="thumb"><img src="art/fowt-agent.gif" alt="LLM agent driving a FOWT co-simulation"></div>
+        <div class="body">
+          <span class="source-badge">FOWT Series &middot; Part 3</span>
+          <h3>Who Runs Your Simulation When You're Not a Simulation Engineer?</h3>
+          <p class="summary">Wrapping the FOWT co-simulation in three tools and handing them to an LLM &mdash; plain-language prompts run the real FMU, plot the result, and report whether the mooring held, on a free-tier model.</p>
+          <a class="card-link" href="#" rel="noopener">Read post &#8594;</a>
+        </div>
+      </article>
 
       <article class="wcard">
         <div class="thumb"><img src="art/art-windturbine.png" alt="Wind turbine rotating machinery simulation"></div>
@@ -200,11 +234,11 @@
       </article>
 
       <article class="wcard">
-        <div class="thumb"><img src="art/art-civil.gif" alt="Catenary civil structure simulation"></div>
+        <div class="thumb"><img src="art/art-civil.gif" alt="Truss structure and crane mechanics simulation"></div>
         <div class="body">
           <span class="source-badge">Wolfram Community</span>
           <h3>Exploring Civil Structure Modeling</h3>
-          <p class="summary">Dynamic simulation of civil structures including catenary cable systems and seismic response.</p>
+          <p class="summary">Dynamic simulation of truss structures and crane mechanics &mdash; studying deflections, stresses, and force response under load.</p>
           <a class="card-link" href="https://community.wolfram.com/groups/-/m/t/2887842" target="_blank" rel="noopener">Read post &#8594;</a>
         </div>
       </article>
@@ -233,20 +267,6 @@
     <div class="about-text">
       <p>Vedat Senol is a modeling expert &mdash; a mechanical and civil engineer with a Ph.D. As an independent consultant, he builds multidomain models and simulations of complex physical systems, predicting how they behave and fail before hardware is built, across control, energy, oil &amp; gas, and dynamic systems.</p>
       <p>His work couples structural, thermal, and control physics in a single multidomain model using Modelica and finite element methods &mdash; turning expensive, high-stakes design questions into simulations that answer them first.</p>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="number">11</div>
-          <div class="label">Articles</div>
-        </div>
-        <div class="stat">
-          <div class="number">Ph.D.</div>
-          <div class="label">Engineering</div>
-        </div>
-        <div class="stat">
-          <div class="number">4</div>
-          <div class="label">Sectors</div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -256,7 +276,7 @@
   <div class="container">
     <hr class="stress-rule">
     <h2>Get in Touch</h2>
-    <p class="contact-lead">Available for consulting engagements, speaking invitations, and research collaboration.</p>
+    <p class="contact-lead">Available for consulting engagements and research collaboration.</p>
     <div class="contact-buttons">
       <a href="mailto:senolvedatt@gmail.com" class="btn-primary">Send Email</a>
       <a href="https://www.linkedin.com/in/senolvedat" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>

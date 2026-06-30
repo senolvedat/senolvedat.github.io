@@ -87,7 +87,6 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
   padding: 1rem 2rem;
   background: rgba(233, 231, 224, 0.88);
-  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
 .nav-logo { font-family: var(--display); font-weight: 600; letter-spacing: 0.02em; }
@@ -171,6 +170,7 @@ nav ul a:hover { color: var(--signal); }
   color: var(--signal); text-transform: uppercase;
 }
 .xcard h3 { font-size: 1.05rem; margin: 0.6rem 0 0; }
+.xcard p { font-size: 0.88rem; color: var(--muted); line-height: 1.55; margin: 0.5rem 0 0; }
 
 /* ===== WRITING ===== */
 .writing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
